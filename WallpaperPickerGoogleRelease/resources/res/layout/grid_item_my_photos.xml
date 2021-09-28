@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/wallpaper_thumbnail">
+    <RelativeLayout android:id="@+id/tile" android:background="?android:attr/colorSecondary" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/overlay_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <FrameLayout android:background="?android:attr/colorForeground" android:padding="@dimen/rotation_tile_desktop_label_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/rotation_tile_desktop_label_text_size" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_photos_category_title"/>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

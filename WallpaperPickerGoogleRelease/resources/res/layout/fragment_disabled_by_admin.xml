@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/colorSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wallpaper_disabled_message_side_margin_sides" android:layout_marginRight="@dimen/wallpaper_disabled_message_side_margin_sides">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wallpaper_disabled_asset_margin_bottom" android:src="@drawable/n_wallpaper_admin_disabled" android:contentDescription="@null"/>
+        <TextView android:textSize="@dimen/abc_text_size_subhead_material" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/wallpaper_disabled_message" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

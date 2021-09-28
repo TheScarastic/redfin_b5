@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content_section" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/preview_card_container" android:paddingTop="@dimen/preview_page_top_margin" android:paddingBottom="@dimen/preview_page_bottom_margin" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/options_container" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <include layout="@layout/grid_preview_card"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/options_container" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/options_container_height" android:layout_marginBottom="@dimen/grid_options_container_bottom_margin" android:paddingHorizontal="@dimen/grid_options_container_horizontal_margin" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/loading_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.ProgressBar"/>
+        <FrameLayout android:id="@+id/error_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/something_went_wrong" style="@style/TitleTextAppearance"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

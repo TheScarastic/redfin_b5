@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/content_section" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.android.wallpaper.widget.PreviewPager android:id="@+id/clock_preview_pager" android:background="?android:attr/colorSecondary" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:card_style="1"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/options_section" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingVertical="10dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/options_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="10dp">
+                    <Button android:id="@+id/apply_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apply_btn" android:layout_alignParentEnd="true" style="@style/ActionPrimaryButton"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/loading_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.ProgressBar"/>
+        <FrameLayout android:id="@+id/error_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/something_went_wrong" style="@style/TitleTextAppearance"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

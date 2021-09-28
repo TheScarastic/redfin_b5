@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:^attr-private/dialogMode" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Space android:layout_width="wrap_content" android:layout_height="24dp"/>
+    <ImageView android:layout_gravity="center" android:layout_width="@dimen/set_wallpaper_dialog_icon_size" android:layout_height="@dimen/set_wallpaper_dialog_icon_size" android:src="@drawable/ic_baseline_wallpaper_24" android:tint="?android:attr/colorAccent"/>
+    <Space android:layout_width="wrap_content" android:layout_height="16dp"/>
+    <TextView android:textSize="24sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/dialog_set_wallpaper_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp" android:fontFamily="@android:string/config_screenshotErrorReceiverComponent"/>
+    <Space android:layout_width="wrap_content" android:layout_height="8dp"/>
+</LinearLayout>

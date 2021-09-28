@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/grid_item_badge_size" android:width="@dimen/grid_item_badge_size"/>
+            <solid android:color="?android:^attr-private/disableChildrenWhenDisabled"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/grid_item_badge_indicator_size" android:width="@dimen/grid_item_badge_indicator_size" android:drawable="@drawable/ic_file_download_gm2_24px"/>
+</layer-list>

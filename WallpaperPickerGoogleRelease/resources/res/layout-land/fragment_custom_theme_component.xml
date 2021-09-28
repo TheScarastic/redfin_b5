@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/component_preview_container" android:background="?android:attr/colorPrimary" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <include android:id="@+id/component_preview_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/preview_page_top_margin" android:layout_marginBottom="@dimen/component_preview_page_bottom_margin" android:layout_marginHorizontal="@dimen/preview_page_horizontal_margin" layout="@layout/theme_component_preview"/>
+        </FrameLayout>
+        <View android:background="?android:attr/colorForeground" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/options_section" android:paddingTop="10dp" android:paddingBottom="@dimen/custom_theme_nav_height" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textAppearance="@style/TitleTextAppearance" android:layout_gravity="center" android:id="@+id/component_options_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:textAlignment="center"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/options_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

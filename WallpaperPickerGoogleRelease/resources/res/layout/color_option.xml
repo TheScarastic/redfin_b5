@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/color_option_tile_padding_bottom" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/option_tile" android:background="@drawable/option_border_color" android:layout_width="@dimen/option_tile_width" android:layout_height="@dimen/option_tile_width">
+        <ImageView android:id="@+id/color_preview_icon" android:layout_width="@dimen/component_color_chip_container_medium_size" android:layout_height="@dimen/component_color_chip_container_medium_size" android:layout_marginHorizontal="@dimen/color_option_tile_margin_horizontal"/>
+    </RelativeLayout>
+</FrameLayout>

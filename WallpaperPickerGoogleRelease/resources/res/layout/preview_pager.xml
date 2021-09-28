@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/preview_viewpager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/indicator_container" android:layout_width="match_parent" android:layout_height="@dimen/indicator_container_height">
+        <com.android.wallpaper.widget.PageIndicator android:layout_gravity="center" android:id="@+id/page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/arrow_previous" android:background="?android:attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/indicator_arrow_touch_area_size" android:layout_height="@dimen/indicator_arrow_touch_area_size" android:contentDescription="@string/previous_page_content_description" android:layout_marginStart="@dimen/indicator_arrow_container_margin_horizontal">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/indicator_arrow_size" android:layout_height="@dimen/indicator_arrow_size" android:src="@drawable/ic_arrow_back_24px" android:tint="?android:attr/colorAccent" android:contentDescription="@null"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/arrow_next" android:background="?android:attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="@dimen/indicator_arrow_touch_area_size" android:layout_height="@dimen/indicator_arrow_touch_area_size" android:contentDescription="@string/next_page_content_description" android:layout_marginEnd="@dimen/indicator_arrow_container_margin_horizontal">
+            <ImageView android:layout_gravity="center" android:layout_width="@dimen/indicator_arrow_size" android:layout_height="@dimen/indicator_arrow_size" android:src="@drawable/ic_arrow_forward_24px" android:tint="?android:attr/colorAccent" android:contentDescription="@null"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

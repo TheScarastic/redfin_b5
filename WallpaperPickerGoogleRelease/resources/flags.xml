@@ -1,0 +1,5 @@
+<AllFlags>
+<flags><flag><name>com.google.common.flags.Flags.forceIgnoreNonflagArguments</name><shortname>force_ignore_nonflag_arguments</shortname><doc>Emergency override Flags.parse()'s strictness: Ignore non-flag arguments instead of throwing an exception. For emergencies only: Instead of setting this flag, switch to parseAndReturnLeftovers() when possible.</doc><doclevel>PUBLIC</doclevel><type>java.lang.Boolean</type></flag>
+<flag><name>com.google.common.flags.Flags.showAllArgumentsForNonflagErrors</name><shortname>show_all_arguments_for_nonflag_errors</shortname><doc>When Flags.parse() detects non-flag arguments, make the exception message include all arguments instead of only the non-flag arguments.</doc><doclevel>PUBLIC</doclevel><type>java.lang.Boolean</type></flag>
+</flags></AllFlags>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="secondary_color">#f8f9fa</color>
+    <color name="status_bar_color">@color/secondary_color</color>
+</resources>

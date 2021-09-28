@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/component_preview_container" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/divider" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="@dimen/preview_pager_max_height" app:layout_constraintHeight_percent="@dimen/preview_pager_maximum_height_ratio" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0">
+            <include android:id="@+id/component_preview_content" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/theme_component_preview"/>
+        </FrameLayout>
+        <View android:id="@+id/divider" android:background="?android:attr/colorForeground" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toTopOf="@+id/component_scroll_view" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/component_preview_container"/>
+        <ScrollView android:id="@+id/component_scroll_view" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/divider">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TitleTextAppearance" android:textSize="@dimen/component_options_title_size" android:id="@+id/component_options_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center" android:layout_marginHorizontal="16dp" android:layout_marginVertical="18dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/options_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

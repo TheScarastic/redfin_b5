@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="@dimen/center_check_size" android:width="@dimen/center_check_size"/>
+            <solid android:color="?android:^attr-private/colorPopupBackground"/>
+        </shape>
+    </item>
+    <item>
+        <inset android:drawable="@drawable/ic_check_24dp" android:insetLeft="@dimen/center_check_padding" android:insetRight="@dimen/center_check_padding" android:insetTop="@dimen/center_check_padding" android:insetBottom="@dimen/center_check_padding"/>
+    </item>
+</layer-list>

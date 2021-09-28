@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LightDialogTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:layout">@layout/abc_alert_dialog_material</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:dialogCornerRadius">24dp</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="WallpaperTheme" parent="@android:style/Theme.DeviceDefault.Settings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="colorControlActivated">?attr/colorPrimary</item>
+        <item name="colorControlHighlight">@color/ripple_material_dark</item>
+        <item name="colorControlNormal">?android:attr/colorPrimary</item>
+        <item name="colorPrimary">?android:attr/colorPrimary</item>
+        <item name="dialogPreferredPadding">24dp</item>
+        <item name="homeAsUpIndicator">@drawable/material_ic_arrow_back_black_24</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="toolbarNavigationButtonStyle">@android:style/Widget.Toolbar.Button.Navigation</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

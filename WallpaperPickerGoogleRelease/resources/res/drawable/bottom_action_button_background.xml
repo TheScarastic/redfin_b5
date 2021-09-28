@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item>
+        <selector>
+            <item android:state_selected="false">
+                <shape>
+                    <solid android:color="?android:attr/colorBackground"/>
+                    <corners android:radius="@dimen/bottom_action_button_radius"/>
+                </shape>
+            </item>
+            <item android:state_selected="true">
+                <shape>
+                    <solid android:color="?android:^attr-private/colorListDivider"/>
+                    <corners android:radius="@dimen/bottom_action_button_radius"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

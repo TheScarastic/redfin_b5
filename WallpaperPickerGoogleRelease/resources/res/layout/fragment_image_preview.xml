@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/separated_tabs_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bottom_actions_height" android:paddingHorizontal="@dimen/separated_tabs_horizontal_margin">
+        <include layout="@layout/separated_tabs"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/screen_preview_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?android:attr/actionBarSize" android:layout_marginBottom="@dimen/bottom_actions_plus_separated_tabs">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@+id/container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingVertical="@dimen/full_preview_page_default_padding_top">
+            <com.android.wallpaper.picker.TouchForwardingLayout android:id="@+id/touch_forwarding_layout" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+                <include layout="@layout/wallpaper_preview_card"/>
+            </com.android.wallpaper.picker.TouchForwardingLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/section_header_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/toolbar_container" layout="@layout/section_header"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/fullscreen_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fullscreen_preview_button_margin" android:paddingHorizontal="@dimen/fullscreen_preview_buttons_horizontal_margin">
+        <include layout="@layout/fullscreen_buttons"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/bottom_action_bar_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/bottom_action_bar"/>
+    </FrameLayout>
+</FrameLayout>

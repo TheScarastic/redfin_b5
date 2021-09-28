@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/preview_icon_0" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+        <Space android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="match_parent" android:layout_weight="0"/>
+        <ImageView android:id="@+id/preview_icon_1" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+        <Space android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="match_parent" android:layout_weight="0"/>
+        <ImageView android:id="@+id/preview_icon_2" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space android:layout_width="match_parent" android:layout_height="68dp"/>
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/preview_icon_3" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+        <Space android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="match_parent" android:layout_weight="0"/>
+        <ImageView android:id="@+id/preview_icon_4" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+        <Space android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="match_parent" android:layout_weight="0"/>
+        <ImageView android:id="@+id/preview_icon_5" android:layout_width="@dimen/preview_theme_icon_size" android:layout_height="@dimen/preview_theme_icon_size" android:tint="@color/theme_preview_icon_color" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

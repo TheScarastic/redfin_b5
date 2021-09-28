@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="24dp" android:width="24dp"/>
+            <solid android:color="?android:^attr-private/colorListDivider"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/grid_item_badge_indicator_size" android:width="@dimen/grid_item_badge_indicator_size" android:drawable="@drawable/ic_check_wallpaper_24dp"/>
+</layer-list>

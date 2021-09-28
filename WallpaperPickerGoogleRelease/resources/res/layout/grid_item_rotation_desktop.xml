@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/wallpaper_thumbnail">
+    <FrameLayout android:id="@+id/tile" android:background="@color/light_grey" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <FrameLayout android:layout_gravity="bottom" android:background="@color/translucent_black_90_alpha" android:padding="@dimen/rotation_tile_desktop_label_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/rotation_tile_desktop_label_text_size" android:textColor="@color/material_white_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daily_refresh_tile_title"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/loading_indicator_container" android:background="@color/black_67_alpha" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/loading_indicator" android:layout_width="@dimen/tile_desktop_progress_bar_size" android:layout_height="@dimen/tile_desktop_progress_bar_size" android:indeterminate="true" android:indeterminateTint="?android:attr/colorAccent"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

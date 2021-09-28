@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/content_section" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <FrameLayout android:id="@+id/preview_card_container" android:background="?android:attr/colorSecondary" android:paddingTop="@dimen/preview_content_padding_top" android:paddingBottom="@dimen/preview_content_padding_bottom" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/theme_preview_card"/>
+                </FrameLayout>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/options_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingVertical="10dp"/>
+        </LinearLayout>
+        <androidx.core.widget.ContentLoadingProgressBar android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/loading_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200dp" android:indeterminate="true" style="@android:style/Widget.DeviceDefault.ProgressBar"/>
+        <FrameLayout android:id="@+id/error_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/something_went_wrong" style="@style/TitleTextAppearance"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

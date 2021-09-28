@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:^attr-private/dialogMode" android:padding="@dimen/set_wallpaper_dialog_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_set_wallpaper_options" android:background="@drawable/dialog_round_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/divider_4dp" android:showDividers="middle">
+        <Button android:textColor="?android:^attr-private/toLeft" android:id="@+id/set_home_wallpaper_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_wallpaper_home_screen_destination" style="@style/set_wallpaper_destination_item"/>
+        <Button android:textColor="?android:^attr-private/toLeft" android:id="@+id/set_lock_wallpaper_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_wallpaper_lock_screen_destination" style="@style/set_wallpaper_destination_item"/>
+        <Button android:textColor="?android:^attr-private/toLeft" android:id="@+id/set_both_wallpaper_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/set_wallpaper_both_destination" style="@style/set_wallpaper_destination_item"/>
+    </LinearLayout>
+</FrameLayout>

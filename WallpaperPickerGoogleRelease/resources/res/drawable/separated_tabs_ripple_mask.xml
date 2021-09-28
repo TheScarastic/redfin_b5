@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <inset android:insetLeft="@dimen/separated_tabs_inset_horizontal" android:insetRight="@dimen/separated_tabs_inset_horizontal">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/separated_tabs_corner_radius"/>
+                <solid android:color="?android:attr/colorControlHighlight"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>

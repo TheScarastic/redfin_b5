@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/content_section" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.android.wallpaper.widget.PreviewPager android:id="@+id/wallpaper_preview_pager" android:layout_width="match_parent" android:layout_height="0dp" app:card_style="1" app:layout_constrainedHeight="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="@dimen/preview_pager_max_height" app:layout_constraintHeight_percent="@dimen/preview_pager_maximum_height_ratio" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <include android:id="@+id/permission_needed" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constrainedHeight="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHeight_max="@dimen/preview_pager_max_height" app:layout_constraintHeight_percent="@dimen/preview_pager_maximum_height_ratio" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/permission_needed_layout"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/root_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <FrameLayout android:id="@+id/category_fragment_container" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/bottom_sheet_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

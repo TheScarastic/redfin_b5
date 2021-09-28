@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="settingslib_colorSurfaceVariant">@android:color/Red_700</color>
+    <color name="settingslib_dialog_accent">@android:color/background_cache_hint_selector_material_light</color>
+    <color name="settingslib_dialog_background">@android:color/Red_800</color>
+    <color name="settingslib_dialog_colorError">#f28b82</color>
+    <color name="settingslib_thumb_disabled_color">@android:color/Red_700</color>
+    <color name="settingslib_thumb_off_color">@android:color/Pink_800</color>
+    <color name="settingslib_track_off_color">@android:color/Red_700</color>
+    <color name="settingslib_track_on_color">@color/settingslib_switch_track_on</color>
+    <color name="theme_preview_icon_color">@color/white_70_alpha</color>
+    <color name="tile_enabled_icon_color">#2d2d2d</color>
+</resources>

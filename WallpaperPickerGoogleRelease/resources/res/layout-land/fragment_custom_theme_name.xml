@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/section_header"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/component_preview_container" android:background="?android:attr/colorSecondary" android:paddingTop="@dimen/preview_content_padding_top" android:paddingBottom="@dimen/preview_content_padding_bottom" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <include layout="@layout/theme_preview_card"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/options_section" android:paddingTop="10dp" android:paddingBottom="@dimen/custom_theme_nav_height" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingVertical="10dp">
+            <TextView android:textAppearance="@style/TitleTextAppearance" android:layout_gravity="center" android:id="@+id/component_options_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:textAlignment="center"/>
+            <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/options_container_height">
+                <EditText android:layout_gravity="center" android:id="@+id/custom_theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300dp" style="@style/CustomThemeNameEditText"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

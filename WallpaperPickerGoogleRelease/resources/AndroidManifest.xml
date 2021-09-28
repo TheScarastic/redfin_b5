@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="200000201" android:versionName="12" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="com.google.android.apps.wallpaper" platformBuildVersionCode="31" platformBuildVersionName="12">
+    <uses-sdk android:minSdkVersion="31" android:targetSdkVersion="31"/>
+    <permission android:name="com.google.android.apps.wallpaper.NOTIFY_ROTATING_WALLPAPER_CHANGED" android:protectionLevel="signature"/>
+    <permission android:name="com.google.android.apps.wallpaper.CHANGE_DOCKED_CLOCK_FACE" android:protectionLevel="signature|system"/>
+    <queries>
+        <package android:name="android"/>
+        <package android:name="com.android.launcher3"/>
+        <package android:name="com.android.settings"/>
+        <package android:name="com.android.systemui"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.google.android.apps.customization.pixel"/>
+        <package android:name="com.google.android.apps.docs"/>
+        <package android:name="com.google.android.apps.nexuslauncher"/>
+        <package android:name="com.google.android.apps.photos"/>
+        <package android:name="com.google.android.apps.wallpaper.nexus"/>
+        <package android:name="com.google.android.apps.wallpaper.pixel"/>
+        <package android:name="com.google.android.gm"/>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <package android:name="com.google.android.launcher"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="com.google.pixel.livewallpaper"/>
+        <package android:name="com.google.pixelcustomclocks"/>
+        <intent>
+            <action android:name="android.intent.action.SET_WALLPAPER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.service.wallpaper.WallpaperService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.pixel.livewallpaper.action.DOWNLOAD_LIVE_WALLPAPER"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.pixel.livewallpaper.action.CANCEL_LIVE_WALLPAPER"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.pixel.livewallpaper.action.DOWNLOAD_STATE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_WALLPAPER_INTERNAL"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT"/>
+    <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_DEVICE_CONFIG"/>
+    <uses-permission android:name="com.google.android.apps.wallpaper.NOTIFY_ROTATING_WALLPAPER_CHANGED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="com.google.pixel.livewallpaper.permission.DOWNLOAD_LIVE_WALLPAPER"/>
+    <uses-permission android:name="com.breel.wallpapers19.APPLY_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SET_WALLPAPER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.service.wallpaper.WallpaperService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_home" android:name="com.google.android.apps.wallpaper.picker.WallpapersApplication" android:backupAgent="com.google.android.apps.wallpaper.backup.WallpapersBackupAgentHelper" android:allowBackup="true" android:restoreAnyVersion="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:requiredForAllUsers="true" android:extractNativeLibs="false" android:usesNonSdkApi="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.android.wallpaper.asset.WallpaperGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.motorola.allow_activities_on_small_external_display" android:value="false"/>
+        <activity android:theme="@style/WallpaperTheme.NoBackground" android:label="@string/wallpaper_app_name" android:name="com.android.wallpaper.picker.TopLevelPickerActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/CustomizationTheme.NoActionBar" android:label="@string/app_name" android:icon="@drawable/ic_home" android:name="com.android.wallpaper.picker.CustomizationPickerActivity" android:exported="false" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity-alias android:label="@string/app_name" android:name="com.google.android.apps.wallpaper.picker.CategoryPickerActivity" android:exported="true" android:targetActivity="com.android.wallpaper.picker.CustomizationPickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:label="@string/app_name" android:icon="@drawable/ic_home" android:name="com.android.customization.picker.CustomizationPickerActivity" android:exported="true" android:targetActivity="com.android.wallpaper.picker.CustomizationPickerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:theme="@style/WallpaperTheme.NoBackground" android:name="com.android.wallpaper.picker.DeepLinkActivity" android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="g.co" android:pathPrefix="/wallpaper"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/WallpaperTheme" android:label="@string/app_name" android:name="com.android.wallpaper.picker.individual.IndividualPickerActivity" android:screenOrientation="portrait" android:parentActivityName="com.android.wallpaper.picker.TopLevelPickerActivity" android:resizeableActivity="false"/>
+        <activity android:theme="@style/CustomizationTheme.NoActionBar" android:name="com.android.wallpaper.picker.PreviewActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <activity android:theme="@style/CustomizationTheme.NoActionBar" android:name="com.android.wallpaper.picker.StandalonePreviewActivity" android:exported="true" android:screenOrientation="portrait" android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomizationTheme.NoActionBar" android:name="com.android.wallpaper.picker.ViewOnlyPreviewActivity" android:screenOrientation="portrait" android:resizeableActivity="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAILpvVyGNlbaI9Z7BUfwhs4Rj8514WGT-XzGjImQ"/>
+        <service android:name="com.google.android.apps.wallpaper.backdrop.BackdropRotationTask" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.apps.wallpaper.backdrop.BackdropRotationJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <service android:name="com.android.wallpaper.backup.MissingHashCodeGeneratorJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <service android:name="com.google.android.apps.wallpaper.sync.ArcRemoteDataSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <service android:name="com.google.android.apps.wallpaper.sync.ArcSyncDataProcessorJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <receiver android:name="com.google.android.apps.wallpaper.backdrop.BackdropAlarmReceiver"/>
+        <receiver android:name="com.google.android.apps.wallpaper.module.BackdropAlarmReceiver"/>
+        <receiver android:name="com.android.wallpaper.module.DailyLoggingAlarmReceiver"/>
+        <receiver android:name="com.android.wallpaper.module.RotationWallpaperUpdateReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.apps.wallpaper.module.GoogleAlarmInitializer" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.apps.wallpaper.module.ThemeSanitizerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.wallpaper.backup.MissingHashCodeGenerator" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.apps.wallpaper.sync.ArcSyncReceiver" android:exported="true">
+            <intent-filter>
+                <data android:scheme="content"/>
+                <action android:name="org.chromium.arc.intent_helper.ACTION_SYNC_SYSTEM_APP_DATA"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.apps.wallpaper.clock.DockedClockReceiver" android:permission="com.google.android.apps.wallpaper.CHANGE_DOCKED_CLOCK_FACE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.apps.wallpaper.SET_DOCKED_CLOCK_FACE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.google.android.apps.wallpaper.sync.SyncDataProvider" android:readPermission="org.chromium.arc.intent_helper.permission.SYNC_SYSTEM_APP_DATA" android:exported="true" android:authorities="com.google.android.apps.wallpaper.sync"/>
+        <provider android:name="com.android.wallpaper.picker.MicropaperProvider" android:exported="true" android:authorities="com.android.wallpaper.picker.micropaperprovider"/>
+    </application>
+</manifest>

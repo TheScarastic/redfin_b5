@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/option_bottom_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/option_tile" android:background="@drawable/option_border" android:padding="@dimen/option_tile_padding_vertical" android:layout_width="@dimen/option_tile_width" android:layout_height="@dimen/option_tile_width">
+        <ImageView android:id="@+id/grid_option_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:textAppearance="@style/OptionTitleTextAppearance" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/option_label" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="@dimen/theme_option_label_margin"/>
+</LinearLayout>

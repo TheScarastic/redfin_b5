@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/option_tile" android:background="@drawable/option_border" android:layout_width="@dimen/option_tile_width" android:layout_height="@dimen/option_tile_width" android:layout_marginHorizontal="@dimen/component_options_margin_horizontal" android:paddingHorizontal="@dimen/option_tile_padding_horizontal" android:paddingVertical="@dimen/option_tile_padding_vertical">
+        <TextView android:textSize="@dimen/font_comonent_option_thumbnail_size" android:textColor="?android:attr/colorForeground" android:layout_gravity="center" android:id="@+id/thumbnail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/font_component_option_thumbnail" android:textAlignment="center"/>
+    </FrameLayout>
+</LinearLayout>

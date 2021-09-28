@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/separated_tabs_inset_horizontal" android:insetRight="@dimen/separated_tabs_inset_horizontal">
+    <shape android:shape="rectangle">
+        <solid android:color="?android:^attr-private/dialogMode"/>
+        <corners android:radius="@dimen/separated_tabs_corner_radius"/>
+    </shape>
+</inset>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/theme_preview_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/preview_theme_cover_topbar_clock_size" android:textColor="?android:attr/textColorSecondary" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/theme_preview_clock" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:id="@+id/theme_preview_top_bar_icons" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/preview_icon_0" android:layout_width="@dimen/preview_theme_cover_topbar_icon_size" android:layout_height="@dimen/preview_theme_cover_topbar_icon_size" android:tint="?android:attr/textColorSecondary"/>
+        <ImageView android:id="@+id/preview_icon_1" android:layout_width="@dimen/preview_theme_cover_topbar_icon_size" android:layout_height="@dimen/preview_theme_cover_topbar_icon_size" android:tint="?android:attr/textColorSecondary" android:layout_marginHorizontal="8dp"/>
+        <ImageView android:id="@+id/preview_icon_2" android:layout_width="@dimen/preview_theme_cover_topbar_icon_size" android:layout_height="@dimen/preview_theme_cover_topbar_icon_size" android:tint="?android:attr/textColorSecondary"/>
+    </LinearLayout>
+</FrameLayout>

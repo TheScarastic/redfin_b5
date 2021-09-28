@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_nav_wallpaper" android:id="@+id/nav_wallpaper" android:title="@string/wallpaper_title"/>
+    <item android:icon="@drawable/ic_nav_theme" android:id="@+id/nav_theme" android:title="@string/theme_title"/>
+    <item android:icon="@drawable/ic_nav_grid" android:id="@+id/nav_grid" android:title="@string/grid_title"/>
+    <item android:icon="@drawable/ic_nav_clock" android:id="@+id/nav_clock" android:title="@string/clock_title"/>
+</menu>
