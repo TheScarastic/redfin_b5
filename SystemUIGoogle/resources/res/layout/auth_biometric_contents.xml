@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="right|center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.AuthCredential.Title"/>
+    <TextView android:gravity="right|center_horizontal" android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.AuthCredential.Subtitle"/>
+    <TextView android:gravity="right|center_horizontal" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.AuthCredential.Description"/>
+    <Space android:id="@+id/space_above_icon" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/biometric_icon_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/biometric_icon" android:layout_width="@dimen/biometric_dialog_biometric_icon_size" android:layout_height="@dimen/biometric_dialog_biometric_icon_size" android:scaleType="fitXY" android:contentDescription="@null"/>
+    </FrameLayout>
+    <Space android:id="@+id/space_below_icon" android:layout_width="match_parent" android:layout_height="12dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/biometric_dialog_gray" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@+id/indicator" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:accessibilityLiveRegion="polite" android:paddingHorizontal="24dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/button_bar" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="88dp" style="?android:attr/buttonBarStyle">
+        <Space android:id="@+id/leftSpacer" android:visibility="visible" android:layout_width="8dp" android:layout_height="match_parent"/>
+        <Button android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/button_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/biometric_dialog_button_negative_max_width" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/button_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/biometric_dialog_button_negative_max_width" android:text="@string/cancel" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/button_use_credential" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/biometric_dialog_button_negative_max_width" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+        <Space android:id="@+id/middleSpacer" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/button_confirm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/biometric_dialog_button_positive_max_width" android:text="@string/biometric_dialog_confirm" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Colored"/>
+        <Button android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/button_try_again" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/biometric_dialog_button_positive_max_width" android:text="@string/biometric_dialog_try_again" android:maxLines="2" style="@android:style/Widget.DeviceDefault.Button.Colored"/>
+        <Space android:id="@+id/rightSpacer" android:visibility="visible" android:layout_width="8dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+</merge>

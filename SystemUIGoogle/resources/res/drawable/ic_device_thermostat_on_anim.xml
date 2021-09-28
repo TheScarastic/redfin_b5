@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f08023e_ic_device_thermostat_on_anim__0">
+    <target android:name="_R_G_L_1_C_0" android:animation="@drawable/res_0x7f08023f_ic_device_thermostat_on_anim__1"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f080240_ic_device_thermostat_on_anim__2"/>
+</animated-vector>

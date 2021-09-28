@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@interpolator/tv_privacy_chip_expand_interpolator" android:duration="@integer/privacy_chip_animation_millis" android:ordering="together">
+    <objectAnimator android:valueTo="@dimen/privacy_chip_height" android:valueType="floatType" android:propertyName="height"/>
+    <objectAnimator android:valueTo="0" android:valueType="floatType" android:propertyName="marginEnd"/>
+    <objectAnimator android:valueTo="@dimen/privacy_chip_radius" android:valueType="floatType" android:propertyName="radius"/>
+    <objectAnimator android:valueTo="255" android:valueType="intType" android:propertyName="dotAlpha"/>
+    <objectAnimator android:valueTo="0" android:valueType="intType" android:propertyName="bgAlpha"/>
+</set>

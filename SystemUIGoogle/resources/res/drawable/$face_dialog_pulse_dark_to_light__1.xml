@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080068_face_dialog_pulse_dark_to_light__1__0" android:duration="333" android:startOffset="0" android:valueFrom="1" android:valueTo="0.5" android:valueType="floatType" android:propertyName="strokeAlpha"/>
+</set>

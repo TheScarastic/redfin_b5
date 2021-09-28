@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:textColor="?android:attr/textColorPrimary" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/battery_percentage_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:importantForAccessibility="no" android:paddingStart="@dimen/battery_level_padding_start"/>

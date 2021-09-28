@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">80dp</dimen>
+    <dimen name="key_button_ripple_max_width">76dp</dimen>
+    <dimen name="navigation_extra_key_width">@dimen/button_size</dimen>
+    <dimen name="navigation_key_padding">0dp</dimen>
+    <dimen name="navigation_key_width">@dimen/button_size</dimen>
+    <dimen name="navigation_side_padding">@dimen/button_size</dimen>
+</resources>

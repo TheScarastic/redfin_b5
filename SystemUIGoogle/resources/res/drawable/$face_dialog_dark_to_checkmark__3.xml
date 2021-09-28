@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080013_face_dialog_dark_to_checkmark__3__0" android:duration="33" android:startOffset="0" android:valueFrom="0.08" android:valueTo="0.08" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080014_face_dialog_dark_to_checkmark__3__1" android:duration="33" android:startOffset="0" android:valueFrom="0.08" android:valueTo="0.08" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080015_face_dialog_dark_to_checkmark__3__2" android:duration="167" android:startOffset="33" android:valueFrom="0.08" android:valueTo="0.1279" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080016_face_dialog_dark_to_checkmark__3__3" android:duration="167" android:startOffset="33" android:valueFrom="0.08" android:valueTo="0.1279" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080017_face_dialog_dark_to_checkmark__3__4" android:duration="100" android:startOffset="200" android:valueFrom="0.1279" android:valueTo="0.1224" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080018_face_dialog_dark_to_checkmark__3__5" android:duration="100" android:startOffset="200" android:valueFrom="0.1279" android:valueTo="0.1224" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080019_face_dialog_dark_to_checkmark__3__6" android:duration="67" android:startOffset="300" android:valueFrom="0.1224" android:valueTo="0.125" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08001a_face_dialog_dark_to_checkmark__3__7" android:duration="67" android:startOffset="300" android:valueFrom="0.1224" android:valueTo="0.125" android:valueType="floatType" android:propertyName="scaleY"/>
+</set>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.notification.row.HybridConversationNotificationView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|center_vertical|center_horizontal|center|start" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="12dp">
+    <FrameLayout android:layout_width="@android:dimen/datepicker_component_width" android:layout_height="@dimen/conversation_single_line_face_pile_size" android:paddingHorizontal="16dp">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@android:id/conversation_text" android:layout_width="@dimen/conversation_single_line_avatar_size" android:layout_height="@dimen/conversation_single_line_avatar_size"/>
+        <ViewStub android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@android:id/conversation_icon_badge" android:layout="@android:layout/date_picker_legacy_holo" android:layout_width="@dimen/conversation_single_line_face_pile_size" android:layout_height="@dimen/conversation_single_line_face_pile_size"/>
+    </FrameLayout>
+    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:id="@+id/notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="8dp"/>
+    <TextView android:id="@+id/conversation_notification_sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="?attr/hybridNotificationTextStyle"/>
+    <TextView android:id="@+id/notification_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="?attr/hybridNotificationTextStyle"/>
+</com.android.systemui.statusbar.notification.row.HybridConversationNotificationView>

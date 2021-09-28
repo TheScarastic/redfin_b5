@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/global_actions_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/global_actions_view"/>
+    <include layout="@layout/global_actions_lock_view"/>
+    <com.android.systemui.globalactions.MinHeightScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/global_actions_grid_root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/global_actions_wallet" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.android.systemui.globalactions.MinHeightScrollView>
+</LinearLayout>

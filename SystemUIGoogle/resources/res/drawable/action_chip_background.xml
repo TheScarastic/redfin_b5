@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/global_screenshot_button_ripple">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="?android:^attr-private/colorProgressBackgroundNormal"/>
+            <corners android:radius="@dimen/screenshot_button_corner_radius"/>
+        </shape>
+    </item>
+</ripple>

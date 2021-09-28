@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="global_actions_show_landscape_wallet_view">true</bool>
+    <bool name="is_tablet">true</bool>
+    <bool name="kg_sim_puk_account_full_screen">false</bool>
+    <bool name="qs_show_user_switcher_for_single_user">true</bool>
+</resources>

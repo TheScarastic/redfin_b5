@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="one">vor %d Tag</item>
+        <item quantity="other">vor %d Tagen</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="one">vor %d Min.</item>
+        <item quantity="other">vor %d Min.</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="one">vor %d Jahr</item>
+        <item quantity="other">vor %d Jahren</item>
+    </plurals>
+    <plurals name="controls_number_of_favorites">
+        <item quantity="one">%s Steuerelement hinzugefügt.</item>
+        <item quantity="other">%s Steuerelemente hinzugefügt.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="one">Gib die PIN für die SIM-Karte ein. Du hast noch %d Versuch, bevor das Gerät nur noch vom Mobilfunkanbieter entsperrt werden kann.</item>
+        <item quantity="other">Gib die PIN für die SIM-Karte ein. Du hast noch %d Versuche.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="one">Die SIM-Karte ist jetzt deaktiviert. Gib den PUK-Code ein, um fortzufahren. Du hast noch %d Versuch, bevor die SIM-Karte endgültig gesperrt wird. Weitere Informationen erhältst du von deinem Mobilfunkanbieter.</item>
+        <item quantity="other">Die SIM-Karte ist jetzt deaktiviert. Gib den PUK-Code ein, um fortzufahren. Du hast noch %d Versuche, bevor die SIM-Karte endgültig gesperrt wird. Weitere Informationen erhältst du von deinem Mobilfunkanbieter.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="one">Falscher PIN-Code der SIM-Karte. Du hast noch %d Versuch, bevor du das Gerät von deinem Mobilfunkanbieter entsperren lassen musst.</item>
+        <item quantity="other">Falscher PIN-Code der SIM-Karte. Du hast noch %d Versuche.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="one">Falscher PUK-Code der SIM-Karte. Du hast noch %d Versuch, bevor deine SIM-Karte endgültig gesperrt wird.</item>
+        <item quantity="other">Falscher PUK-Code der SIM-Karte. Du hast noch %d Versuche, bevor deine SIM-Karte endgültig gesperrt wird.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="one">Das Gerät wurde seit %d Stunde nicht mehr entsperrt. Bitte bestätige das Passwort.</item>
+        <item quantity="other">Das Gerät wurde seit %d Stunden nicht mehr entsperrt. Bitte bestätige das Passwort.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="one">Das Gerät wurde seit %d Stunde nicht mehr entsperrt. Bitte bestätige das Muster.</item>
+        <item quantity="other">Das Gerät wurde seit %d Stunden nicht mehr entsperrt. Bitte bestätige das Muster.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="one">Das Gerät wurde seit %d Stunde nicht mehr entsperrt. Bitte bestätige die PIN.</item>
+        <item quantity="other">Das Gerät wurde seit %d Stunden nicht mehr entsperrt. Bitte bestätige die PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="one">In 1 Sekunde noch einmal versuchen.</item>
+        <item quantity="other">In %d Sekunden noch einmal versuchen.</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d neue Benachrichtigung</item>
+        <item quantity="other">%d neue Benachrichtigungen</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="one">%s weitere Benachrichtigung vorhanden.</item>
+        <item quantity="other">%s weitere Benachrichtigungen vorhanden.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="one">%d Gerät</item>
+        <item quantity="other">%d Geräte</item>
+    </plurals>
+    <plurals name="smartspace_hours">
+        <item quantity="one">%d h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="smartspace_minutes">
+        <item quantity="one">%d Min.</item>
+        <item quantity="other">%d Min.</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="one">%d Stunde</item>
+        <item quantity="other">%d Stunden</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minuten</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Es kann nur ein Nutzer erstellt werden.</item>
+        <item quantity="other">Du kannst bis zu %d Nutzer hinzufügen.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d Gerät verbunden</item>
+        <item quantity="other">%1$d Geräte verbunden</item>
+    </plurals>
+</resources>

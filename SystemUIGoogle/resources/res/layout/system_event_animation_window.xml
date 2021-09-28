@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/container" android:paddingTop="@dimen/status_bar_padding_top" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="8dp">
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/dot_view" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/system_animation_ongoing_dot"/>
+</FrameLayout>

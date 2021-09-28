@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="one">%d min ago</item>
+        <item quantity="other">%d min ago</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="one">%d yr ago</item>
+        <item quantity="other">%d yr ago</item>
+    </plurals>
+    <plurals name="controls_number_of_favorites">
+        <item quantity="one">%s control added.</item>
+        <item quantity="other">%s controls added.</item>
+    </plurals>
+    <plurals name="kg_password_default_pin_message">
+        <item quantity="one">Enter SIM PIN. You have %d remaining attempt before you must contact your operator to unlock your device.</item>
+        <item quantity="other">Enter SIM PIN. You have %d remaining attempts.</item>
+    </plurals>
+    <plurals name="kg_password_default_puk_message">
+        <item quantity="one">SIM is now disabled. Enter PUK code to continue. You have %d remaining attempt before SIM becomes permanently unusable. Contact operator for details.</item>
+        <item quantity="other">SIM is now disabled. Enter PUK code to continue. You have %d remaining attempts before SIM becomes permanently unusable. Contact operator for details.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_pin_code">
+        <item quantity="one">Incorrect SIM PIN code. You have %d remaining attempt before you must contact your provider to unlock your device.</item>
+        <item quantity="other">Incorrect SIM PIN code. You have %d remaining attempts.</item>
+    </plurals>
+    <plurals name="kg_password_wrong_puk_code">
+        <item quantity="one">Incorrect SIM PUK code. You have %d remaining attempt before SIM becomes permanently unusable.</item>
+        <item quantity="other">Incorrect SIM PUK code. You have %d remaining attempts before SIM becomes permanently unusable.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_password">
+        <item quantity="one">Device hasn&apos;t been unlocked for %d hour. Confirm password.</item>
+        <item quantity="other">Device hasn&apos;t been unlocked for %d hours. Confirm password.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pattern">
+        <item quantity="one">Device hasn&apos;t been unlocked for %d hour. Confirm pattern.</item>
+        <item quantity="other">Device hasn&apos;t been unlocked for %d hours. Confirm pattern.</item>
+    </plurals>
+    <plurals name="kg_prompt_reason_time_pin">
+        <item quantity="one">Device hasn&apos;t been unlocked for %d hour. Confirm PIN.</item>
+        <item quantity="other">Device hasn&apos;t been unlocked for %d hours. Confirm PIN.</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="one">Try again in 1 second.</item>
+        <item quantity="other">Try again in %d seconds.</item>
+    </plurals>
+    <plurals name="notification_group_overflow_description">
+        <item quantity="one">%s more notification inside.</item>
+        <item quantity="other">%s more notifications inside.</item>
+    </plurals>
+    <plurals name="quick_settings_hotspot_secondary_label_num_devices">
+        <item quantity="one">%d device</item>
+        <item quantity="other">%d devices</item>
+    </plurals>
+    <plurals name="smartspace_hours">
+        <item quantity="one">%d hr</item>
+        <item quantity="other">%d hr</item>
+    </plurals>
+    <plurals name="smartspace_minutes">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <plurals name="snoozeHourOptions">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="snoozeMinuteOptions">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="user_limit_reached_message">
+        <item quantity="one">Only one user can be created.</item>
+        <item quantity="other">You can add up to %d users.</item>
+    </plurals>
+    <plurals name="wifi_tether_connected_summary">
+        <item quantity="one">%1$d device connected</item>
+        <item quantity="other">%1$d devices connected</item>
+    </plurals>
+</resources>

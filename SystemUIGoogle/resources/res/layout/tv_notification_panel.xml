@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="end" android:orientation="vertical" android:id="@+id/tv_notification_panel" android:background="@android:color/transparent" android:layout_width="@dimen/tv_notification_panel_width" android:layout_height="match_parent">
+    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/tv_notification_text_color" android:padding="12dp" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tv_notification_panel_title"/>
+    <TextView android:textColor="@color/tv_notification_text_color" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/no_tv_notifications" android:paddingTop="24dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/tv_notification_panel_no_notifications" android:layout_weight="1" style="?android:attr/titleTextStyle"/>
+    <androidx.leanback.widget.VerticalGridView android:id="@+id/notifications_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

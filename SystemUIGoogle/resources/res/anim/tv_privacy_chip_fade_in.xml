@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" android:interpolator="@interpolator/tv_privacy_chip_collapse_interpolator" android:duration="@integer/privacy_chip_animation_millis" android:ordering="together">
+    <objectAnimator android:valueTo="255" android:valueType="intType" android:propertyName="dotAlpha"/>
+</set>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:priv-android="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:autoMirrored="true">
+    <item android:id="@+id/slider_foreground" android:height="@dimen/rounded_slider_height">
+        <shape>
+            <size android:height="@dimen/rounded_slider_height"/>
+            <solid android:color="?android:^attr-private/colorListDivider"/>
+            <corners android:radius="@dimen/rounded_slider_corner_radius"/>
+        </shape>
+    </item>
+    <item android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/slider_icon" android:height="@dimen/rounded_slider_icon_size" android:width="@dimen/rounded_slider_icon_size" android:right="@dimen/rounded_slider_icon_inset">
+        <com.android.systemui.util.AlphaTintDrawableWrapper android:tint="?android:attr/textColorPrimaryInverse" android:drawable="@drawable/ic_brightness"/>
+    </item>
+</layer-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f08024b_ic_device_vacuum_on_anim__0">
+    <target android:name="_R_G_L_1_G_D_0_P_0" android:animation="@drawable/res_0x7f08024c_ic_device_vacuum_on_anim__1"/>
+    <target android:name="_R_G_L_0_C_0" android:animation="@drawable/res_0x7f08024d_ic_device_vacuum_on_anim__2"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f08024e_ic_device_vacuum_on_anim__3"/>
+</animated-vector>

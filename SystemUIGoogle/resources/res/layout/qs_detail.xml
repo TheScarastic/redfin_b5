@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.qs.QSDetail xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/qs_detail_background" android:paddingBottom="8dp" android:visibility="invisible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@android:dimen/slice_shortcut_size" android:importantForAccessibility="no" android:elevation="4dp">
+    <include android:id="@+id/qs_detail_header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/qs_detail_header"/>
+    <com.android.systemui.statusbar.AlphaOptimizedImageView android:id="@+id/qs_detail_header_progress" android:background="@color/qs_detail_progress_track" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/indeterminate_anim" android:scaleType="fitXY" android:alpha="0"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <FrameLayout android:id="@android:id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+    <include layout="@layout/qs_detail_buttons"/>
+</com.android.systemui.qs.QSDetail>

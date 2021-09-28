@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f080228_ic_device_security_system_on_anim__0">
+    <target android:name="_R_G_L_2_G_D_0_P_0" android:animation="@drawable/res_0x7f080229_ic_device_security_system_on_anim__1"/>
+    <target android:name="_R_G_L_0_C_0" android:animation="@drawable/res_0x7f08022a_ic_device_security_system_on_anim__2"/>
+    <target android:name="_R_G_L_0_G_G_0_D_0_P_0" android:animation="@drawable/res_0x7f08022b_ic_device_security_system_on_anim__3"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f08022c_ic_device_security_system_on_anim__4"/>
+</animated-vector>

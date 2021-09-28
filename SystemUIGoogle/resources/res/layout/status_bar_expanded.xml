@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationPanelView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" android:id="@+id/notification_panel" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/big_clock_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/keyguard_qs_user_switch_stub" android:layout="@layout/keyguard_qs_user_switch" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:visibility="gone" layout="@layout/keyguard_bottom_area"/>
+    <ViewStub android:id="@+id/keyguard_user_switcher_stub" android:layout="@layout/keyguard_user_switcher" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/status_bar_expanded_plugin_frame"/>
+    <include layout="@layout/dock_info_bottom_area_overlay"/>
+    <com.android.keyguard.LockIconView android:layout_gravity="center" android:id="@+id/lock_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/lock_icon_bg" android:background="@drawable/fingerprint_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/lock_icon" android:padding="@dimen/lock_icon_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </com.android.keyguard.LockIconView>
+    <com.android.systemui.statusbar.phone.NotificationsQuickSettingsContainer android:layout_gravity="left|right|center_horizontal|fill_horizontal|clip_vertical" android:id="@+id/notification_container_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:visibility="gone" layout="@layout/keyguard_status_view"/>
+        <include layout="@layout/dock_info_overlay"/>
+        <FrameLayout android:id="@+id/qs_frame" android:clipChildren="false" android:clipToPadding="false" android:layout="@layout/qs_panel" android:layout_width="@dimen/qs_panel_width" android:layout_height="0dp" systemui:layout_constraintBottom_toBottomOf="0" systemui:layout_constraintEnd_toEndOf="0" systemui:layout_constraintStart_toStartOf="0" systemui:layout_constraintTop_toTopOf="0" systemui:viewType="com.android.systemui.plugins.qs.QS"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/qs_edge_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" systemui:layout_constraintGuide_percent="0.5"/>
+        <com.android.systemui.statusbar.notification.stack.NotificationStackScrollLayout android:id="@+id/notification_stack_scroller" android:layout_width="@dimen/notification_panel_width" android:layout_height="match_parent" android:layout_marginTop="@dimen/notification_panel_margin_top" android:layout_marginBottom="@dimen/close_handle_underlap" systemui:layout_constraintEnd_toEndOf="0" systemui:layout_constraintStart_toStartOf="0"/>
+        <include android:id="@+id/ambient_indication_container" layout="@layout/ambient_indication"/>
+        <include layout="@layout/photo_preview_overlay"/>
+        <include android:visibility="invisible" layout="@layout/keyguard_status_bar"/>
+        <Button android:id="@+id/report_rejected_touch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/status_bar_header_height_keyguard" android:text="@string/report_rejected_touch"/>
+        <com.android.systemui.statusbar.phone.TapAgainView android:gravity="center" android:id="@+id/shade_falsing_tap_again" android:background="@drawable/rounded_bg_full" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:minHeight="44dp" android:text="@string/tap_again" android:elevation="4dp" android:paddingHorizontal="16dp" systemui:layout_constraintBottom_toBottomOf="0" systemui:layout_constraintLeft_toLeftOf="0" systemui:layout_constraintRight_toRightOf="0"/>
+    </com.android.systemui.statusbar.phone.NotificationsQuickSettingsContainer>
+    <FrameLayout android:id="@+id/preview_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.android.systemui.statusbar.phone.NotificationPanelView>

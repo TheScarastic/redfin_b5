@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="48dp" android:layout_weight="1">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="?android:attr/textColorPrimary" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/screenrecord_audio_label" android:fontFamily="@android:string/config_screenshotErrorReceiverComponent"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="?android:attr/textColorSecondary" android:id="@+id/screen_recording_dialog_source_text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

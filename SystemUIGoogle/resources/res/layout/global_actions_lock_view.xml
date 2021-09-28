@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/global_actions_lock_message_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/global_actions_lock_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/global_action_lock_message" android:drawablePadding="12dp" android:layout_marginHorizontal="@dimen/global_actions_side_margin" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0.35" style="@style/TextAppearance.Control.Title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

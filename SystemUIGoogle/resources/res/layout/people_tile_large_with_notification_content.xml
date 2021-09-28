@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@android:style/Theme.DeviceDefault.DayNight" android:layout_gravity="center" android:id="@android:id/background" android:background="@drawable/people_space_tile_view_card" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToOutline="true">
+    <include layout="@layout/people_tile_large_with_content"/>
+</RelativeLayout>

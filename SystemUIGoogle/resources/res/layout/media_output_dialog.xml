@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/media_output_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="94dp" android:paddingStart="16dp">
+        <ImageView android:id="@+id/header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingEnd="@dimen/media_output_dialog_header_icon_padding"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="16dp">
+            <TextView android:textSize="20sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@android:string/config_screenshotServiceComponent"/>
+            <TextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="roboto-regular"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_list" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_result" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </LinearLayout>
+    <View android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/stop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="64dp" android:text="@string/keyboard_key_media_stop" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:id="@+id/done" android:layout_width="wrap_content" android:layout_height="64dp" android:text="@string/inline_done_button" android:layout_marginEnd="0dp" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+    </LinearLayout>
+</LinearLayout>

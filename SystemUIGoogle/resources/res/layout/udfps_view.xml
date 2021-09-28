@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.biometrics.UdfpsView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" android:id="@+id/udfps_view" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/accessibility_fingerprint_label" systemui:sensorTouchAreaCoefficient="0.75">
+    <ViewStub android:id="@+id/animation_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.android.systemui.biometrics.UdfpsSurfaceView android:id="@+id/hbm_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.android.systemui.biometrics.UdfpsView>

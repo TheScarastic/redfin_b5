@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/controls_management_root" android:paddingTop="@dimen/controls_management_top_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/controls_management_side_padding" android:paddingEnd="@dimen/controls_management_side_padding">
+    <TextView android:textAppearance="@style/TextAppearance.Control.Management.Title" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center"/>
+    <TextView android:textAppearance="@style/TextAppearance.Control.Management.Subtitle" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/controls_management_titles_margin" android:textAlignment="center"/>
+    <ViewStub android:id="@+id/stub" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/controls_management_footer_height">
+        <View android:layout_gravity="top|center_vertical|center_horizontal|center" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="@dimen/controls_app_divider_height"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/controls_management_footer_side_margin" android:paddingVertical="@dimen/controls_management_footer_top_margin">
+            <Button android:gravity="center_vertical" android:id="@+id/other_apps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/controls_favorite_see_other_apps" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"/>
+            <Button android:id="@+id/done" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/save" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@android:style/Widget.DeviceDefault.Button.Colored"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</LinearLayout>

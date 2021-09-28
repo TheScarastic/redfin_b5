@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.notification.stack.SectionHeaderView xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/notification_section_header_height" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/content" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:forceHasOverlappingRendering="false">
+        <FrameLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:id="@+id/header_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_section_header_gentle" android:forceHasOverlappingRendering="false" style="@style/TextAppearance.NotificationSectionHeaderButton"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/btn_clear_all" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/status_bar_notification_section_header_clear_btn" android:scaleType="center" android:contentDescription="@string/accessibility_notification_section_header_gentle_clear_all" android:tintMode="src_in" android:forceHasOverlappingRendering="false"/>
+    </LinearLayout>
+</com.android.systemui.statusbar.notification.stack.SectionHeaderView>

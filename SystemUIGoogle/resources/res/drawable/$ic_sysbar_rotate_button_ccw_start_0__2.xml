@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="sequentially">
+    <objectAnimator android:interpolator="@drawable/res_0x7f08010e_ic_sysbar_rotate_button_ccw_start_0__2__0" android:duration="600" android:startOffset="100" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotation"/>
+    <objectAnimator android:duration="100" android:startOffset="1300" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08010f_ic_sysbar_rotate_button_ccw_start_0__2__1" android:duration="600" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotation"/>
+    <objectAnimator android:duration="100" android:startOffset="1300" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080110_ic_sysbar_rotate_button_ccw_start_0__2__2" android:duration="600" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotation"/>
+    <objectAnimator android:duration="100" android:startOffset="1300" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080111_ic_sysbar_rotate_button_ccw_start_0__2__3" android:duration="600" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotation"/>
+    <objectAnimator android:duration="100" android:startOffset="1300" android:valueFrom="0" android:valueTo="0" android:propertyName="rotation"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080112_ic_sysbar_rotate_button_ccw_start_0__2__4" android:duration="600" android:valueFrom="0" android:valueTo="-90" android:propertyName="rotation"/>
+</set>

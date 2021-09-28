@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.AlphaOptimizedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/operator_name_frame" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.android.systemui.statusbar.OperatorNameView android:textAppearance="?android:attr/textAppearanceSmall" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/operator_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:maxLength="20" android:paddingEnd="5dp"/>
+</com.android.systemui.statusbar.AlphaOptimizedFrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/qs_tile_height" android:layout_marginTop="@dimen/qs_tile_margin_top_bottom" android:layout_marginBottom="@dimen/qs_tile_margin_top_bottom"/>

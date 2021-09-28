@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:id="@+id/dnd_icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp">
+    <ImageView android:layout_gravity="center" android:layout_width="14dp" android:layout_height="14dp" android:src="@android:drawable/ic_settings_bluetooth" android:tint="?android:attr/textColorTertiary"/>
+</FrameLayout>

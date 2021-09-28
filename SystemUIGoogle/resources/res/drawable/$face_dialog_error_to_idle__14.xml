@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080047_face_dialog_error_to_idle__14__0" android:duration="150" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 30.3,29.215C 30.3,29.58759101867676 30.3,31.077408981323238 30.3,31.45" android:propertyXName="translateX" android:propertyYName="translateY"/>
+</set>

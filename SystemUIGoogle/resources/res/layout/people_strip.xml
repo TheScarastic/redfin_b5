@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.notification.stack.PeopleHubView xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/notification_section_header_height" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/people_list" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="8dp" android:forceHasOverlappingRendering="false">
+        <FrameLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:forceHasOverlappingRendering="false">
+            <TextView android:id="@+id/header_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_section_header_conversations" style="@style/TextAppearance.NotificationSectionHeaderButton"/>
+        </FrameLayout>
+        <ImageView android:padding="8dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:forceHasOverlappingRendering="false"/>
+        <ImageView android:padding="8dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:forceHasOverlappingRendering="false"/>
+        <ImageView android:padding="8dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:forceHasOverlappingRendering="false"/>
+        <ImageView android:padding="8dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:forceHasOverlappingRendering="false"/>
+        <ImageView android:padding="8dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:forceHasOverlappingRendering="false"/>
+    </LinearLayout>
+</com.android.systemui.statusbar.notification.stack.PeopleHubView>

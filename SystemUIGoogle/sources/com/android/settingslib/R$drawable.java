@@ -1,0 +1,45 @@
+package com.android.settingslib;
+/* loaded from: classes.dex */
+public final class R$drawable {
+    public static final int ic_1x_mobiledata = 2131231559;
+    public static final int ic_3g_mobiledata = 2131231560;
+    public static final int ic_4g_mobiledata = 2131231561;
+    public static final int ic_4g_plus_mobiledata = 2131231562;
+    public static final int ic_5g_e_mobiledata = 2131231563;
+    public static final int ic_5g_mobiledata = 2131231564;
+    public static final int ic_5g_plus_mobiledata = 2131231565;
+    public static final int ic_carrier_wifi = 2131231599;
+    public static final int ic_e_mobiledata = 2131231768;
+    public static final int ic_g_mobiledata = 2131231781;
+    public static final int ic_h_mobiledata = 2131231823;
+    public static final int ic_h_plus_mobiledata = 2131231824;
+    public static final int ic_headphone = 2131231825;
+    public static final int ic_help = 2131231828;
+    public static final int ic_lte_mobiledata = 2131231853;
+    public static final int ic_lte_plus_mobiledata = 2131231854;
+    public static final int ic_media_display_device = 2131231855;
+    public static final int ic_media_group_device = 2131231856;
+    public static final int ic_media_speaker_device = 2131231862;
+    public static final int ic_mobile_call_strength_0 = 2131231869;
+    public static final int ic_mobile_call_strength_1 = 2131231870;
+    public static final int ic_mobile_call_strength_2 = 2131231871;
+    public static final int ic_mobile_call_strength_3 = 2131231872;
+    public static final int ic_mobile_call_strength_4 = 2131231873;
+    public static final int ic_no_internet_wifi_signal_0 = 2131232012;
+    public static final int ic_no_internet_wifi_signal_1 = 2131232013;
+    public static final int ic_no_internet_wifi_signal_2 = 2131232014;
+    public static final int ic_no_internet_wifi_signal_3 = 2131232015;
+    public static final int ic_no_internet_wifi_signal_4 = 2131232016;
+    public static final int ic_show_x_wifi_signal_0 = 2131232090;
+    public static final int ic_show_x_wifi_signal_1 = 2131232091;
+    public static final int ic_show_x_wifi_signal_2 = 2131232092;
+    public static final int ic_show_x_wifi_signal_3 = 2131232093;
+    public static final int ic_show_x_wifi_signal_4 = 2131232094;
+    public static final int ic_smartphone = 2131232095;
+    public static final int ic_wifi_call_strength_0 = 2131232159;
+    public static final int ic_wifi_call_strength_1 = 2131232160;
+    public static final int ic_wifi_call_strength_2 = 2131232161;
+    public static final int ic_wifi_call_strength_3 = 2131232162;
+    public static final int ic_wifi_call_strength_4 = 2131232163;
+    public static final int stat_sys_airplane_mode = 2131232456;
+}

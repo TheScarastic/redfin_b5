@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:height="48dp" android:width="48dp" android:viewportWidth="32" android:viewportHeight="32">
+    <path android:fillColor="?android:^attr-private/colorProgressBackgroundNormal" android:pathData="M16,16m-16,0a16,16 0,1 1,32 0a16,16 0,1 1,-32 0"/>
+    <path android:fillColor="?android:attr/textColorPrimary" android:pathData="M23,10.41L21.59,9 16,14.59 10.41,9 9,10.41 14.59,16 9,21.59 10.41,23 16,17.41 21.59,23 23,21.59 17.41,16z"/>
+</vector>

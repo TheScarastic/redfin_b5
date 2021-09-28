@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@android:style/Theme.DeviceDefault.DayNight" android:id="@android:id/background" android:background="@drawable/people_space_tile_view_card" android:paddingTop="14dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="16dp" android:clipToOutline="true">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/person_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="@dimen/name_text_size_for_large" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/name" android:paddingTop="14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="@dimen/content_text_size_for_large" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/last_interaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_status" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/availability" android:background="@drawable/availability_dot_10dp" android:layout_width="10dp" android:layout_height="10dp"/>
+</FrameLayout>

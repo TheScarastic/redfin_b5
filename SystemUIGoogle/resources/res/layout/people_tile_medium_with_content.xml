@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:androidprv="http://schemas.android.com/apk/prv/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@android:style/Theme.DeviceDefault.DayNight" android:layout_gravity="center" android:orientation="vertical" android:id="@android:id/background" android:background="@drawable/people_space_tile_view_card" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToOutline="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/people_tile_punctuation_background_medium"/>
+        <include layout="@layout/people_tile_emoji_background_medium"/>
+        <include layout="@layout/people_status_scrim_layout"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/content" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:gravity="start" android:id="@+id/person_icon" android:layout_width="52dp" android:layout_height="52dp"/>
+                <ImageView android:id="@+id/availability" android:background="@drawable/availability_dot_10dp" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginStart="-2dp"/>
+                <LinearLayout android:gravity="top|left|center_vertical|center_horizontal|center|start" android:orientation="vertical" android:id="@+id/medium_content" android:paddingBottom="@dimen/medium_content_padding_above_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp">
+                    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/subtext" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/empty_user_name" android:singleLine="true"/>
+                    <ImageView android:gravity="center" android:id="@+id/image" android:background="@drawable/people_space_content_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:clipToOutline="true"/>
+                    <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="@dimen/content_text_size_for_medium" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/text_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/empty_status" android:maxLines="2" android:singleLine="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="18dp" android:clipToOutline="true">
+                <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="@dimen/name_text_size_for_medium_content" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_user_name" android:singleLine="true" android:paddingEnd="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Time" android:textSize="14sp" android:textColor="?android:^attr-private/toLeft" android:ellipsize="end" android:gravity="end" android:id="@+id/messages_count" android:background="@drawable/people_space_messages_count_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginStart="-32dp"/>
+                <ImageView android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/predefined_icon" android:layout_width="@dimen/regular_predefined_icon" android:layout_height="@dimen/regular_predefined_icon" android:tint="?android:attr/textColorSecondary" android:layout_marginStart="-24dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

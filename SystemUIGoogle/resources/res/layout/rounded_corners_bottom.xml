@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.RegionInterceptingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rounded_corners_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/left" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/rounded_corner_bottom" android:tint="#ff000000"/>
+    <FrameLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/privacy_dot_left_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/status_bar_height" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/status_bar_padding_top">
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/privacy_dot" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/system_animation_ongoing_dot"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/right" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/rounded_corner_bottom" android:tint="#ff000000"/>
+    <FrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/privacy_dot_right_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/status_bar_height" android:layout_marginTop="@dimen/status_bar_padding_top" android:layout_marginRight="0dp">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/privacy_dot" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/system_animation_ongoing_dot"/>
+    </FrameLayout>
+</com.android.systemui.RegionInterceptingFrameLayout>

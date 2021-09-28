@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.notification.row.ChannelRow xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/half_shelf_row" android:padding="8dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:layout_gravity="center_vertical" android:id="@+id/icon" android:padding="8dp" android:layout_width="48dp" android:layout_height="48dp"/>
+        <RelativeLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/description_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/channel_name" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@android:string/config_screenshotErrorReceiverComponent" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/channel_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/channel_name" android:fontFamily="@android:string/config_defaultNearbySharingComponent" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </RelativeLayout>
+        <Switch android:layout_gravity="center_vertical" android:id="@+id/toggle" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="48dp"/>
+    </LinearLayout>
+    <View android:background="@android:color/car_cyan_400" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</com.android.systemui.statusbar.notification.row.ChannelRow>

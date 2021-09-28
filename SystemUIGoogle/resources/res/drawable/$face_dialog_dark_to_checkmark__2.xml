@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080011_face_dialog_dark_to_checkmark__2__0" android:duration="33" android:startOffset="0" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="trimPathEnd"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080012_face_dialog_dark_to_checkmark__2__1" android:duration="233" android:startOffset="33" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="trimPathEnd"/>
+</set>

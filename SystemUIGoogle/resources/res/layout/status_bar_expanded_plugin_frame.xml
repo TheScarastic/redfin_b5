@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/Theme_SystemUI_QuickSettings" android:layout_gravity="center_horizontal" android:id="@+id/plugin_frame" android:visibility="gone" android:layout_width="@dimen/qs_panel_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_side_paddings" android:layout_marginTop="@dimen/notification_side_paddings" android:layout_marginRight="@dimen/notification_side_paddings"/>

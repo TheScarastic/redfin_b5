@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@+id/quick_status_bar_date_privacy" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@android:dimen/slice_shortcut_size" android:minHeight="48dp">
+    <FrameLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/date_container" android:layout_width="0dp" android:layout_height="match_parent" android:minHeight="48dp" android:layout_weight="1">
+        <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/TextAppearance.QS.Status" android:gravity="center_vertical" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" systemui:datePattern="@string/abbrev_wday_month_day_no_year_alarm"/>
+    </FrameLayout>
+    <android.widget.Space android:layout_gravity="center" android:id="@+id/space" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent"/>
+    <FrameLayout android:gravity="center" android:id="@+id/header_text_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <FrameLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/privacy_container" android:layout_width="0dp" android:layout_height="match_parent" android:minHeight="48dp" android:layout_weight="1">
+        <include layout="@layout/ongoing_privacy_chip"/>
+    </FrameLayout>
+</LinearLayout>

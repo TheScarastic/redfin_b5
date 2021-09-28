@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/MediaPlayer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:forceHasOverlappingRendering="false">
+    <com.android.systemui.media.MediaScrollView android:id="@+id/media_carousel_scroller" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/media_carousel" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.android.systemui.media.MediaScrollView>
+    <com.android.systemui.qs.PageIndicator android:id="@+id/media_page_indicator" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginBottom="4dp" android:tint="?android:attr/textColor" android:forceHasOverlappingRendering="false"/>
+</FrameLayout>

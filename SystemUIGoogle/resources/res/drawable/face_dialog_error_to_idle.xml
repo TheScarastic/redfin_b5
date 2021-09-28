@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f08016a_face_dialog_error_to_idle__0">
+    <target android:name="_R_G_L_0_G_D_0_P_0" android:animation="@drawable/res_0x7f08016b_face_dialog_error_to_idle__1"/>
+    <target android:name="_R_G_L_0_G_D_1_P_0" android:animation="@drawable/res_0x7f080173_face_dialog_error_to_idle__2"/>
+    <target android:name="_R_G_L_0_G_D_1_P_0" android:animation="@drawable/res_0x7f080174_face_dialog_error_to_idle__3"/>
+    <target android:name="_R_G_L_0_G_D_1_P_0" android:animation="@drawable/res_0x7f080175_face_dialog_error_to_idle__4"/>
+    <target android:name="_R_G_L_0_G_D_1_P_0" android:animation="@drawable/res_0x7f080176_face_dialog_error_to_idle__5"/>
+    <target android:name="_R_G_L_0_G_D_1_P_0" android:animation="@drawable/res_0x7f080177_face_dialog_error_to_idle__6"/>
+    <target android:name="_R_G_L_0_G_D_2_P_0" android:animation="@drawable/res_0x7f080178_face_dialog_error_to_idle__7"/>
+    <target android:name="_R_G_L_0_G_D_2_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080179_face_dialog_error_to_idle__8"/>
+    <target android:name="_R_G_L_0_G_D_2_P_0_G_0_T_0" android:animation="@drawable/res_0x7f08017a_face_dialog_error_to_idle__9"/>
+    <target android:name="_R_G_L_0_G_D_3_P_0" android:animation="@drawable/res_0x7f08016c_face_dialog_error_to_idle__10"/>
+    <target android:name="_R_G_L_0_G_D_3_P_0_G_0_T_0" android:animation="@drawable/res_0x7f08016d_face_dialog_error_to_idle__11"/>
+    <target android:name="_R_G_L_0_G_D_3_P_0_G_0_T_0" android:animation="@drawable/res_0x7f08016e_face_dialog_error_to_idle__12"/>
+    <target android:name="_R_G_L_0_G_D_4_P_0" android:animation="@drawable/res_0x7f08016f_face_dialog_error_to_idle__13"/>
+    <target android:name="_R_G_L_0_G_D_4_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080170_face_dialog_error_to_idle__14"/>
+    <target android:name="_R_G_L_0_G_D_4_P_0" android:animation="@drawable/res_0x7f080171_face_dialog_error_to_idle__15"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f080172_face_dialog_error_to_idle__16"/>
+</animated-vector>

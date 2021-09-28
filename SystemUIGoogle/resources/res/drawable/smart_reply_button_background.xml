@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/notification_ripple_untinted_color">
+    <item>
+        <inset android:insetLeft="0dp" android:insetRight="0dp" android:insetTop="8dp" android:insetBottom="8dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/smart_reply_button_corner_radius"/>
+                <stroke android:width="@dimen/smart_reply_button_stroke_width" android:color="@color/smart_reply_button_stroke"/>
+                <solid android:color="@color/smart_reply_button_background"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080050_face_dialog_error_to_idle__5__0" android:duration="217" android:startOffset="0" android:valueFrom="0.34" android:valueTo="0" android:valueType="floatType" android:propertyName="trimPathStart"/>
+</set>

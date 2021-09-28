@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardSliceView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="@dimen/below_clock_padding_start">
+    <TextView android:theme="@style/TextAppearance.Keyguard" android:textColor="?attr/wallpaperTextColor" android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="44dp" android:paddingEnd="44dp"/>
+    <view android:gravity="center" android:orientation="horizontal" android:id="@+id/row" android:layout_width="match_parent" android:layout_height="wrap_content" class="com.android.keyguard.KeyguardSliceView$Row"/>
+</com.android.keyguard.KeyguardSliceView>

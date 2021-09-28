@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="92dp" android:minHeight="92dp" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="center" android:alpha="?android:attr/primaryContentAlpha"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textSize="12sp" android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@android:id/message" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@android:id/tabMode" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
